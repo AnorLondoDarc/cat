@@ -1,0 +1,261 @@
+.variety {
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.variety__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.variety__item {
+  background-color: @verylight-gray;
+  padding: 20px;
+  padding-top: 30px;
+  margin-bottom: 18px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    min-height: 372px;
+    padding: 79px 52px 52px 50px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.variety__item--sid {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 28px;
+    top: 20px;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      right: 62px;
+      left: auto;
+      top: 92px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      left: 52px;
+      top: 47px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/panter-sid.svg");
+    background-size: 36px 50px;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 50px;
+    background-position: 0 0;
+    top: 20px;
+    left: 30px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 140px 192px;
+      width: 140px;
+      height: 192px;
+      right: 92px;
+      left: auto;
+      top: 81px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+      right: auto;
+      left: 67px;
+      top: 41px;
+    }
+  }
+}
+
+.variety__item--stand {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 25px;
+    top: 20px;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      right: 62px;
+      left: auto;
+      top: 92px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      left: 52px;
+      top: 47px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/panter-stand.svg");
+    background-size: 67px 28px;
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 28px;
+    background-position: 0 0;
+    top: 32px;
+    left: 17px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 268px 112px;
+      width: 268px;
+      height: 112px;
+      right: 27px;
+      left: auto;
+      top: 135px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
+      right: auto;
+      left: 32px;
+      top: 67px;
+    }
+  }
+}
+
+.variety h2 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-left: 75px;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.variety__text {
+  font-weight: normal;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: @dark-gray;
+  border-bottom: 1px solid @gray;
+
+  @media (min-width: @tablet-width) {
+    width: 374px;
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+    border: none;
+    margin-bottom: 48px;
+    padding: 0;
+
+    &:nth-child(2) {
+      width: 342px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-bottom: 23px;
+
+    &:nth-child(2) {
+      width: 100%;
+    }
+  }
+}
+
+.variety__link {
+  position: relative;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-position: 0 0;
+    background-image: url("../img/arrow.png");
+    width: 24px;
+    height: 12px;
+    left: 100px;
+    top: 5px;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      left: 130px;
+      top: 10px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,119 @@
+.site-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.site-list a {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 22px 21px;
+  padding-bottom: 23px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: @black;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: @white;
+  border-top: 1px solid @light-gray;
+  border-bottom: 1px solid @light-gray;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-weight: 400;
+    padding-top: 28px;
+    padding-bottom: 9px;
+    font-size: 18px;
+    line-height: 24px;
+    background: none;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 9px;
+  }
+}
+
+.site-list__item--hero a {
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.site-list {
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: auto;
+  }
+}
+
+.site-list__item {
+  margin-top: 0;
+
+  &:nth-child(1) {
+    margin-top: 15px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background: @green;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+}
+
+.site-list__item a[href] {
+  @media (min-width: @tablet-width) {
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

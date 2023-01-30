@@ -1,0 +1,35 @@
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  position: relative;
+}
+
+.page-body--green-cat {
+  &::before {
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      content: "";
+      background-image: url("../img/cat-background-desktop.jpg");
+      background-size: 720px 696px;
+      background-repeat: no-repeat;
+      background-color: @green-bg;
+      background-position: top right;
+      right: 0;
+      top: 0;
+      object-fit: 720px 696px;
+      transform: unset;
+      left: unset;
+      height: 696px;
+      width: 50vw;
+      display: block;
+      z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/cat-background-desktop@2x.jpg");
+      }
+    }
+  }
+}
